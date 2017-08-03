@@ -9,9 +9,16 @@ PointCloud::PointCloud(){
     points = new std::vector<Vertex>;
 };
 
-PointCloud::PointCloud(std::string filename) : PointCloud(new FileReader(filepath));
+PointCloud::PointCloud(std::string filename){
+    loadFromFile(new FileReader(filename));
 
-PointCloud::PointCloud(FileReader file &){
+}
+
+PointCloud::PointCloud(FileReader& file){
+    loadFromFile(file);
+}
+
+PointCloud::loadFromFile(FileReader& file){
     std::cout<<file->readLine();
 }
 

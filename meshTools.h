@@ -11,6 +11,7 @@ class PointCloud{
 private:
     std::vector<Vertex> * points;
     FileReader * inFile;
+    void loadFromFile();
 public:
     PointCloud();
     PointCloud(std::string); //filepath name
