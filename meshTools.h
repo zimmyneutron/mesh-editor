@@ -10,12 +10,11 @@ class FileReader;
 class PointCloud{
 private:
     std::vector<Vertex> * points;
-    FileReader * inFile;
-    void loadFromFile();
+    void loadFromFile(FileReader *);
 public:
     PointCloud();
     PointCloud(std::string); //filepath name
-    PointCloud(FileReader &inFile); //initialize from opened file
+    PointCloud(FileReader *); //initialize from opened file
     ~PointCloud();
 
     void AddPoint(Vertex);

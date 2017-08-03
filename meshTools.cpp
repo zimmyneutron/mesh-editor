@@ -14,11 +14,11 @@ PointCloud::PointCloud(std::string filename){
 
 }
 
-PointCloud::PointCloud(FileReader& file){
+PointCloud::PointCloud(FileReader * file){
     loadFromFile(file);
 }
 
-PointCloud::loadFromFile(FileReader& file){
+void PointCloud::loadFromFile(FileReader * file){
     std::cout<<file->readLine();
 }
 
