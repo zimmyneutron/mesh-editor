@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1501793368 source:c:\users\josef\documents\github\mesh-editor\main.cpp
+	"meshTools.h"
+	<iostream>
+
+1501795318 c:\users\josef\documents\github\mesh-editor\meshtools.h
+	<fstream>
+	<vector>
+
+1501793423 source:c:\users\josef\documents\github\mesh-editor\meshtools.cpp
+	"meshTools.h"
+	<fstream>
+	<iostream>
+	<sstream>
+	<vector>
+
